@@ -1,0 +1,2198 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="hexo," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="关于hexo的使用可以参考hexo的官方文档。但官方文档过于细致，对于个人来说重点不够突出，在使用时查找也不是很方便。现在将一些常用的，重要的，易忘的集中起来，方便后续使用的查找。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo一些常见的使用方法">
+<meta property="og:url" content="http://yoursite.com/2017/03/02/hexo一些常见的使用方法/index.html">
+<meta property="og:site_name" content="拈花一笑">
+<meta property="og:description" content="关于hexo的使用可以参考hexo的官方文档。但官方文档过于细致，对于个人来说重点不够突出，在使用时查找也不是很方便。现在将一些常用的，重要的，易忘的集中起来，方便后续使用的查找。">
+<meta property="og:updated_time" content="2017-03-02T07:23:15.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo一些常见的使用方法">
+<meta name="twitter:description" content="关于hexo的使用可以参考hexo的官方文档。但官方文档过于细致，对于个人来说重点不够突出，在使用时查找也不是很方便。现在将一些常用的，重要的，易忘的集中起来，方便后续使用的查找。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"right","display":"hide"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/03/02/hexo一些常见的使用方法/"/>
+
+
+
+
+
+  <title> hexo一些常见的使用方法 | 拈花一笑 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">拈花一笑</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/02/hexo一些常见的使用方法/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="daemon">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="拈花一笑">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="拈花一笑" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                hexo一些常见的使用方法
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-02T10:03:06+08:00">
+                2017-03-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/写作/" itemprop="url" rel="index">
+                    <span itemprop="name">写作</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+              <blockquote class="post-description">
+                  关于hexo的使用可以参考hexo的官方文档。但官方文档过于细致，对于个人来说重点不够突出，在使用时查找也不是很方便。现在将一些常用的，重要的，易忘的集中起来，方便后续使用的查找。
+              </blockquote>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>以下的内容大都引用自hexo的官方文档，只是按自己的习惯作了一些摘取和整理。</p>
+<h1 id="常用配置"><a href="#常用配置" class="headerlink" title="常用配置"></a>常用配置</h1><h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">title</td>
+<td style="text-align:left">网站标题</td>
+</tr>
+<tr>
+<td style="text-align:left">subtitle</td>
+<td style="text-align:left">网站副标题</td>
+</tr>
+<tr>
+<td style="text-align:left">description</td>
+<td style="text-align:left">网站描述</td>
+</tr>
+<tr>
+<td style="text-align:left">author</td>
+<td style="text-align:left">名字</td>
+</tr>
+<tr>
+<td style="text-align:left">language</td>
+<td style="text-align:left">网站使用的语言</td>
+</tr>
+<tr>
+<td style="text-align:left">timezone</td>
+<td style="text-align:left">网站时区。Hexo默认使用电脑的时区。具体时区列表可以参考<a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank" rel="external">时区列表</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">url</td>
+<td style="text-align:left">网址</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">root</td>
+<td style="text-align:left">网站根目录</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">permalink</td>
+<td style="text-align:left">文章的永久链接格式</td>
+<td style="text-align:left">:year/:month/:day/:title/</td>
+</tr>
+<tr>
+<td style="text-align:left">permalink_defaults</td>
+<td style="text-align:left">永久链接中各部分的默认值</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<blockquote><p><span style="font-size:20px;">网站存放在子目录</span><br>如果网站存放在子目录中，例如 <a href="http://yoursite.com/blog，则">http://yoursite.com/blog，则</a> url 设为 <a href="http://yoursite.com/blog">http://yoursite.com/blog</a> 并把 root 设为 /blog/。</p>
+</blockquote>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">source_dir</td>
+<td style="text-align:left">资源文件夹，这个文件夹用来存放内容。</td>
+<td style="text-align:left">source</td>
+</tr>
+<tr>
+<td style="text-align:left">public_dir</td>
+<td style="text-align:left">公共文件夹，这个文件夹用于存放生成的站点文件。</td>
+<td style="text-align:left">public</td>
+</tr>
+<tr>
+<td style="text-align:left">tag_dir</td>
+<td style="text-align:left">标签文件夹</td>
+<td style="text-align:left">tags</td>
+</tr>
+<tr>
+<td style="text-align:left">archive_dir</td>
+<td style="text-align:left">归档文件夹</td>
+<td style="text-align:left">archives</td>
+</tr>
+<tr>
+<td style="text-align:left">category_dir</td>
+<td style="text-align:left">分类文件夹</td>
+<td style="text-align:left">categories</td>
+</tr>
+<tr>
+<td style="text-align:left">code_dir</td>
+<td style="text-align:left">Include code 文件夹</td>
+<td style="text-align:left">downloads/code</td>
+</tr>
+<tr>
+<td style="text-align:left">i18n_dir</td>
+<td style="text-align:left">国际化（i18n）文件夹</td>
+<td style="text-align:left">:lang</td>
+</tr>
+<tr>
+<td style="text-align:left">skip_render</td>
+<td style="text-align:left">跳过指定文件的渲染，您可使用 glob 表达式来匹配路径。</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">new_post_name</td>
+<td style="text-align:left">新文章的文件名称</td>
+<td style="text-align:left">:title.md</td>
+</tr>
+<tr>
+<td style="text-align:left">default_layout</td>
+<td style="text-align:left">预设布局</td>
+<td style="text-align:left">post</td>
+</tr>
+<tr>
+<td style="text-align:left">auto_spacing</td>
+<td style="text-align:left">在中文和英文之间加入空格</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">titlecase</td>
+<td style="text-align:left">把标题转换为 title case</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">external_link</td>
+<td style="text-align:left">在新标签中打开链接</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left">filename_case</td>
+<td style="text-align:left">把文件名称转换为 (1) 小写或 (2) 大写</td>
+<td style="text-align:left">0</td>
+</tr>
+<tr>
+<td style="text-align:left">render_drafts</td>
+<td style="text-align:left">显示草稿</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">post_asset_folder</td>
+<td style="text-align:left">启动 Asset 文件夹</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">relative_link</td>
+<td style="text-align:left">把链接改为与根目录的相对位址</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">future</td>
+<td style="text-align:left">显示未来的文章</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left">highlight</td>
+<td style="text-align:left">代码块的设置</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="分类-amp-标签"><a href="#分类-amp-标签" class="headerlink" title="分类 &amp; 标签"></a>分类 &amp; 标签</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">default_category</td>
+<td style="text-align:left">默认分类</td>
+<td style="text-align:left">uncategorized</td>
+</tr>
+<tr>
+<td style="text-align:left">category_map</td>
+<td style="text-align:left">分类别名</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">tag_map</td>
+<td style="text-align:left">标签别名</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="日期-时间格式"><a href="#日期-时间格式" class="headerlink" title="日期 / 时间格式"></a>日期 / 时间格式</h2><p>Hexo 使用 <a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> 来解析和显示时间。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">date_format</td>
+<td style="text-align:left">日期格式</td>
+<td style="text-align:left">YYYY-MM-DD</td>
+</tr>
+<tr>
+<td style="text-align:left">time_format</td>
+<td style="text-align:left">时间格式</td>
+<td style="text-align:left">HH:mm:ss</td>
+</tr>
+</tbody>
+</table>
+<h2 id="分页"><a href="#分页" class="headerlink" title="分页"></a>分页</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">per_page</td>
+<td style="text-align:left">每页显示的文章量 (0 = 关闭分页功能)</td>
+<td style="text-align:left">10</td>
+</tr>
+<tr>
+<td style="text-align:left">pagination_dir</td>
+<td style="text-align:left">分页目录</td>
+<td style="text-align:left">page</td>
+</tr>
+</tbody>
+</table>
+<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">theme</td>
+<td style="text-align:left">当前主题名称。值为false时禁用主题</td>
+</tr>
+<tr>
+<td style="text-align:left">deploy</td>
+<td style="text-align:left">部署部分的设置</td>
+</tr>
+</tbody>
+</table>
+<h1 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h1><h2 id="init"><a href="#init" class="headerlink" title="init"></a>init</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init [fold]</div></pre></td></tr></table></figure>
+<p>新建一个网站。如果没有设置<code>folder</code>，Hexo 默认在目前的文件夹建立网站。</p>
+<h2 id="new"><a href="#new" class="headerlink" title="new"></a>new</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new [layout] &lt;title&gt;</div></pre></td></tr></table></figure>
+<p>新建一篇文章。如果没有设置<code>layout</code>的话，默认使用<code>_config.yml</code>中的<code>default_layout</code>参数代替。如果标题包含空格的话，请使用引号括起来。</p>
+<h2 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div><div class="line">$ hexo g</div></pre></td></tr></table></figure>
+<p>生成静态文件。</p>
+<ul>
+<li>-d, –deploy 文件生成后立即部署网站</li>
+<li>-w, –watch 监视文件变动</li>
+</ul>
+<h2 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo publish [layout] &lt;filename&gt;</div></pre></td></tr></table></figure>
+<p>发表草稿。</p>
+<h2 id="server"><a href="#server" class="headerlink" title="server"></a>server</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>启动服务器。默认情况下，访问网址为： http://localhost:4000/。 </p>
+<ul>
+<li>-p, –port 重设端口</li>
+<li>-i, –ip 重设ip</li>
+<li>-s, –static 只使用静态文件</li>
+<li>-l, –log 启动日记记录，使用覆盖记录格式</li>
+</ul>
+<h2 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div><div class="line">$ hexo d</div></pre></td></tr></table></figure>
+<p>部署网站。</p>
+<ul>
+<li>-g, –generate 部署之前预先生成静态文件</li>
+</ul>
+<h2 id="render"><a href="#render" class="headerlink" title="render"></a>render</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo render &lt;file1&gt; [file2] ...</div></pre></td></tr></table></figure>
+<p>渲染文件。</p>
+<ul>
+<li>-o, –output 设置输出路径</li>
+</ul>
+<h2 id="migrate"><a href="#migrate" class="headerlink" title="migrate"></a>migrate</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo migrate &lt;type&gt;</div></pre></td></tr></table></figure>
+<p>从其他博客系统迁移内容。</p>
+<h2 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div></pre></td></tr></table></figure>
+<p>清除缓存文件<code>(db.json)</code>和已生成的静态文件<code>(public)</code>。<br>在某些情况（尤其是更换主题后），如果发现对站点的更改无论如何也不生效，可能需要运行该命令。</p>
+<h1 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new [layout] &lt;title&gt;</div></pre></td></tr></table></figure>
+<p>可以在命令中指定文章的布局<code>（layout）</code>，默认为<code>post</code>，可以通过修改<code>_config.yml</code>中的<code>default_layout</code>参数来指定默认布局。</p>
+<h2 id="布局（Layout）"><a href="#布局（Layout）" class="headerlink" title="布局（Layout）"></a>布局（Layout）</h2><p>Hexo 有三种默认布局：post、page 和 draft，它们分别对应不同的路径，而您自定义的其他布局和 post 相同，都将储存到 source/_posts 文件夹。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">布局</th>
+<th style="text-align:left">路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">post</td>
+<td style="text-align:left">source/_posts</td>
+</tr>
+<tr>
+<td style="text-align:left">page</td>
+<td style="text-align:left">source</td>
+</tr>
+<tr>
+<td style="text-align:left">draft</td>
+<td style="text-align:left">source/_drafts</td>
+</tr>
+</tbody>
+</table>
+<p><em>*</em>如果不想文章被处理，可以将 Front-Matter 中的layout: 设为 false 。</p>
+<h2 id="文件名称"><a href="#文件名称" class="headerlink" title="文件名称"></a>文件名称</h2><p>Hexo 默认以标题做为文件名称，但可以编辑 new_post_name 参数来改变默认的文件名称，举例来说，设为 :year-:month-:day-:title.md 可以更方便的通过日期来管理文章。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">变量</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">:title</td>
+<td style="text-align:left">标题（小写，空格将会被替换为短杠）</td>
+</tr>
+<tr>
+<td style="text-align:left">:year</td>
+<td style="text-align:left">建立的年份，比如， 2015</td>
+</tr>
+<tr>
+<td style="text-align:left">:month</td>
+<td style="text-align:left">建立的月份（有前导零），比如， 04</td>
+</tr>
+<tr>
+<td style="text-align:left">:i_month</td>
+<td style="text-align:left">建立的月份（无前导零），比如， 4</td>
+</tr>
+<tr>
+<td style="text-align:left">:day</td>
+<td style="text-align:left">建立的日期（有前导零），比如， 07</td>
+</tr>
+<tr>
+<td style="text-align:left">:i_day</td>
+<td style="text-align:left">建立的日期（无前导零），比如， 7</td>
+</tr>
+</tbody>
+</table>
+<h2 id="草稿"><a href="#草稿" class="headerlink" title="草稿"></a>草稿</h2><p>草稿(draft)是 Hexo 的一种特殊部局。这种布局在建立时会被保存到 $source_dir/_drafts 文件夹，可以通过 <code>publish</code> 命令将草稿移动到 $source_dir/_posts 文件夹，该命令的使用方式与 <code>new</code> 十分类似，也可以在命令中指定 layout 来指定布局。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo publish [layout] &lt;title&gt;</div></pre></td></tr></table></figure><br>草稿默认不会显示在页面中，可以在执行时加上 –draft 参数，或是把 render_drafts 参数设为 true 来预览草稿。</p>
+<h2 id="模版（Scaffold）"><a href="#模版（Scaffold）" class="headerlink" title="模版（Scaffold）"></a>模版（Scaffold）</h2><p>在新建文章时，Hexo 会根据 scaffolds 文件夹内相对应的文件来建立文件，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new photo &quot;My Gallery&quot;</div></pre></td></tr></table></figure><br>在执行这行指令时，Hexo 会尝试在 scaffolds 文件夹中寻找 photo.md，并根据其内容建立文章，以下是可以在模版中使用的变量：</p>
+<ul>
+<li>layout 布局</li>
+<li>title 标题</li>
+<li>date 文件建立日期</li>
+</ul>
+<h2 id="Front-Matter"><a href="#Front-Matter" class="headerlink" title="Front-Matter"></a>Front-Matter</h2><p>Front-matter 是文件最上方以 — 分隔的区域，用于指定个别文件的变量<br>以下是预先定义的参数，可在模板中使用这些参数值并加以利用。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">layout</td>
+<td style="text-align:left">布局</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">title</td>
+<td style="text-align:left">标题</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">date</td>
+<td style="text-align:left">建立日期</td>
+<td style="text-align:left">文件建立日期</td>
+</tr>
+<tr>
+<td style="text-align:left">updated</td>
+<td style="text-align:left">更新日期</td>
+<td style="text-align:left">文件更新日期</td>
+</tr>
+<tr>
+<td style="text-align:left">comments</td>
+<td style="text-align:left">开启文章的评论功能</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left">tags</td>
+<td style="text-align:left">标签（不适用于分页）</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">categories</td>
+<td style="text-align:left">分类（不适用于分页）</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">permalink</td>
+<td style="text-align:left">覆盖文章网址</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h1 id="标签插件"><a href="#标签插件" class="headerlink" title="标签插件"></a>标签插件</h1><h2 id="引用块"><a href="#引用块" class="headerlink" title="引用块"></a>引用块</h2><p>说明：在文章中插入引言，可包含作者、来源和标题。<br>别号：quote<br>语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% blockquote [author[, source]]  [link] [source_link_title] %&#125;</div><div class="line">content</div><div class="line">&#123;% endblockquote %&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="普通的-blockquote"><a href="#普通的-blockquote" class="headerlink" title="普通的 blockquote"></a>普通的 blockquote</h3><p>没有提供参数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% blockquote %&#125;</div><div class="line">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</div><div class="line">&#123;% endblockquote %&#125;</div></pre></td></tr></table></figure></p>
+<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</p>
+</blockquote>
+<h3 id="引用书上的句子"><a href="#引用书上的句子" class="headerlink" title="引用书上的句子"></a>引用书上的句子</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% blockquote David Levithan, Wide Awake %&#125;</div><div class="line">Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</div><div class="line">&#123;% endblockquote %&#125;</div></pre></td></tr></table></figure>
+<blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
+<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
+<h3 id="引用Twitter"><a href="#引用Twitter" class="headerlink" title="引用Twitter"></a>引用Twitter</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% blockquote @DevDocs https://twitter.com/devdocs/status/356095192085962752 %&#125;</div><div class="line">NEW: DevDocs now comes with syntax highlighting. http://devdocs.io</div><div class="line">&#123;% endblockquote %&#125;</div></pre></td></tr></table></figure>
+<blockquote><p>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io" target="_blank" rel="external">http://devdocs.io</a></p>
+<footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752" target="_blank" rel="external">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote>
+<h3 id="引用网络上的文章"><a href="#引用网络上的文章" class="headerlink" title="引用网络上的文章"></a>引用网络上的文章</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% blockquote Seth Godin http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html Welcome to Island Marketing %&#125;</div><div class="line">Every interaction is both precious and an opportunity to delight.</div><div class="line">&#123;% endblockquote %&#125;</div></pre></td></tr></table></figure>
+<blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
+<footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="external">Welcome to Island Marketing</a></cite></footer></blockquote>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>说明：在文章中插入代码。<br>别名： code<br>语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% codeblock [title] [lang:language] [url] [link text] %&#125;</div><div class="line">code snippet</div><div class="line">&#123;% endcodeblock %&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="普通代码块"><a href="#普通代码块" class="headerlink" title="普通代码块"></a>普通代码块</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% codeblock %&#125;</div><div class="line">alert(&apos;Hello World!&apos;);</div><div class="line">&#123;% endcodeblock %&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alert(&apos;Hello World!&apos;);</div></pre></td></tr></table></figure>
+<h3 id="指定语言"><a href="#指定语言" class="headerlink" title="指定语言"></a>指定语言</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% codeblock lang:objc %&#125;</div><div class="line">[rectangle setX: 10 y: 10 width: 20 height: 20];</div><div class="line">&#123;% endcodeblock %&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[rectangle setX: <span class="number">10</span> y: <span class="number">10</span> width: <span class="number">20</span> height: <span class="number">20</span>];</div></pre></td></tr></table></figure>
+<h3 id="附加说明"><a href="#附加说明" class="headerlink" title="附加说明"></a>附加说明</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% codeblock Array.map lang:javascript %&#125;</div><div class="line">array.map(callback[, thisArg])</div><div class="line">&#123;% endcodeblock %&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><figcaption><span>Array.map</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">array.map(callback[, thisArg])</div></pre></td></tr></table></figure>
+<h3 id="附加网址和说明"><a href="#附加网址和说明" class="headerlink" title="附加网址和说明"></a>附加网址和说明</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;% codeblock _.compact http://underscorejs.org/#compact Underscore.js lang:javascript %&#125;</div><div class="line">_.compact([0, 1, false, 2, &apos;&apos;, 3]);</div><div class="line">//=&gt; [1, 2, 3]</div><div class="line">&#123;% endcodeblock %&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><figcaption><span>_.compact</span><a href="http://underscorejs.org/#compact" target="_blank" rel="external">Underscore.js</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">_.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="literal">false</span>, <span class="number">2</span>, <span class="string">''</span>, <span class="number">3</span>]);</div><div class="line"><span class="comment">//=&gt; [1, 2, 3]</span></div></pre></td></tr></table></figure>
+<h3 id="反引号代码块"><a href="#反引号代码块" class="headerlink" title="反引号代码块"></a>反引号代码块</h3><p>另一种形式的代码块，不同的是它使用三个反引号来包裹。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">```[language] [title] [url] [link text]</div><div class="line">code snippet</div><div class="line">```</div></pre></td></tr></table></figure></p>
+<h2 id="jsFiddle"><a href="#jsFiddle" class="headerlink" title="jsFiddle"></a>jsFiddle</h2><p>在文章中嵌入 jsFiddle。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% jsfiddle shorttag [tabs] [skin] [width] [height] %&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="Gist"><a href="#Gist" class="headerlink" title="Gist"></a>Gist</h2><p>在文章中嵌入 Gist。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% gist gist_id [filename] %&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="iframe"><a href="#iframe" class="headerlink" title="iframe"></a>iframe</h2><p>在文章中插入 iframe。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% iframe url [width] [height] %&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h2><p>在文章中插入指定大小的图片。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% img [class names] /path/to/image [width] [height] [title text [alt text]] %&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h2><p>在文章中插入链接，并自动给外部链接添加 target=”_blank” 属性。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% link text url [external] [title] %&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="Include-Code"><a href="#Include-Code" class="headerlink" title="Include Code"></a>Include Code</h2><p>插入 source 文件夹内的代码文件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% include_code [title] [lang:language] path/to/file %&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="Youtube"><a href="#Youtube" class="headerlink" title="Youtube"></a>Youtube</h2><p>在文章中插入 Youtube 视频。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% youtube video_id %&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="Vimeo"><a href="#Vimeo" class="headerlink" title="Vimeo"></a>Vimeo</h2><p>在文章中插入 Vimeo 视频。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% vimeo video_id %&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="引用文章"><a href="#引用文章" class="headerlink" title="引用文章"></a>引用文章</h2><p>引用其他文章的链接。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&#123;% post_path slug %&#125;</div><div class="line">&#123;% post_link slug [title] %&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="引用资源"><a href="#引用资源" class="headerlink" title="引用资源"></a>引用资源</h2><p>引用文章的资源。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% asset_path slug %&#125;</div><div class="line">&#123;% asset_img slug [title] %&#125;</div><div class="line">&#123;% asset_link slug [title] %&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="Raw"><a href="#Raw" class="headerlink" title="Raw"></a>Raw</h2><p>如果您想在文章中插入 Swig 标签，可以尝试使用 Raw 标签，以免发生解析异常。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% raw %&#125;</div><div class="line">content</div><div class="line">&#123;% endraw %&#125;</div></pre></td></tr></table></figure></p>
+<h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><h2 id="全局变量"><a href="#全局变量" class="headerlink" title="全局变量"></a>全局变量</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">变量</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">site</td>
+<td style="text-align:left">网站变量</td>
+</tr>
+<tr>
+<td style="text-align:left">page</td>
+<td style="text-align:left">针对该页面的内容以及 front-matter 所设定的变量。</td>
+</tr>
+<tr>
+<td style="text-align:left">config</td>
+<td style="text-align:left">网站配置</td>
+</tr>
+<tr>
+<td style="text-align:left">theme</td>
+<td style="text-align:left">主题配置。继承自网站配置。</td>
+</tr>
+<tr>
+<td style="text-align:left">_ (单下划线)</td>
+<td style="text-align:left">Lodash 函数库</td>
+</tr>
+<tr>
+<td style="text-align:left">path</td>
+<td style="text-align:left">当前页面的路径（不含根路径）</td>
+</tr>
+<tr>
+<td style="text-align:left">url</td>
+<td style="text-align:left">当前页面的完整网址</td>
+</tr>
+<tr>
+<td style="text-align:left">env</td>
+<td style="text-align:left">环境变量</td>
+</tr>
+</tbody>
+</table>
+<h2 id="网站变量"><a href="#网站变量" class="headerlink" title="网站变量"></a>网站变量</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">变量</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">site.posts</td>
+<td style="text-align:left">所有文章</td>
+</tr>
+<tr>
+<td style="text-align:left">site.pages</td>
+<td style="text-align:left">所有分页</td>
+</tr>
+<tr>
+<td style="text-align:left">site.categories</td>
+<td style="text-align:left">所有分类</td>
+</tr>
+<tr>
+<td style="text-align:left">site.tags</td>
+<td style="text-align:left">所有标签</td>
+</tr>
+</tbody>
+</table>
+<h2 id="页面-page"><a href="#页面-page" class="headerlink" title="页面(page)"></a>页面(page)</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">变量</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">page.title</td>
+<td style="text-align:left">页面标题</td>
+</tr>
+<tr>
+<td style="text-align:left">page.date</td>
+<td style="text-align:left">页面建立日期（Moment.js 对象）</td>
+</tr>
+<tr>
+<td style="text-align:left">page.updated</td>
+<td style="text-align:left">页面更新日期（Moment.js 对象）</td>
+</tr>
+<tr>
+<td style="text-align:left">page.comments</td>
+<td style="text-align:left">留言是否开启</td>
+</tr>
+<tr>
+<td style="text-align:left">page.layout</td>
+<td style="text-align:left">布局名称</td>
+</tr>
+<tr>
+<td style="text-align:left">page.content</td>
+<td style="text-align:left">页面的完整内容</td>
+</tr>
+<tr>
+<td style="text-align:left">page.excerpt</td>
+<td style="text-align:left">页面摘要</td>
+</tr>
+<tr>
+<td style="text-align:left">page.more</td>
+<td style="text-align:left">除了页面摘要的其余内容</td>
+</tr>
+<tr>
+<td style="text-align:left">page.source</td>
+<td style="text-align:left">页面原始路径</td>
+</tr>
+<tr>
+<td style="text-align:left">page.full_source</td>
+<td style="text-align:left">页面的完整原始路径</td>
+</tr>
+<tr>
+<td style="text-align:left">page.path</td>
+<td style="text-align:left">页面网址（不含根路径）。我们通常在主题中使用 url_for(page.path)。</td>
+</tr>
+<tr>
+<td style="text-align:left">page.permalink</td>
+<td style="text-align:left">页面的完整网址</td>
+</tr>
+<tr>
+<td style="text-align:left">page.prev</td>
+<td style="text-align:left">上一个页面。如果此为第一个页面则为 null。</td>
+</tr>
+<tr>
+<td style="text-align:left">page.next</td>
+<td style="text-align:left">下一个页面。如果此为最后一个页面则为 null。</td>
+</tr>
+<tr>
+<td style="text-align:left">page.raw</td>
+<td style="text-align:left">文章的原始内容</td>
+</tr>
+<tr>
+<td style="text-align:left">page.photos</td>
+<td style="text-align:left">文章的照片（用于相簿）</td>
+</tr>
+<tr>
+<td style="text-align:left">page.link</td>
+<td style="text-align:left">文章的外部链接（用于链接文章）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="文章-post"><a href="#文章-post" class="headerlink" title="文章 (post)"></a>文章 (post)</h2><p>和 page 布局类似，但是添加了下列变量。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">变量</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">page.published</td>
+<td style="text-align:left">如果该文章已发布则为True</td>
+</tr>
+<tr>
+<td style="text-align:left">page.categories</td>
+<td style="text-align:left">该文章的所有分类</td>
+</tr>
+<tr>
+<td style="text-align:left">page.tags</td>
+<td style="text-align:left">该文章的所有标签</td>
+</tr>
+</tbody>
+</table>
+<h2 id="首页（index）"><a href="#首页（index）" class="headerlink" title="首页（index）"></a>首页（index）</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">变量</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">page.per_page</td>
+<td style="text-align:left">每页显示的文章数量</td>
+</tr>
+<tr>
+<td style="text-align:left">page.total</td>
+<td style="text-align:left">总文章数</td>
+</tr>
+<tr>
+<td style="text-align:left">page.current</td>
+<td style="text-align:left">目前页数</td>
+</tr>
+<tr>
+<td style="text-align:left">page.current_url</td>
+<td style="text-align:left">目前分页的网址</td>
+</tr>
+<tr>
+<td style="text-align:left">page.posts</td>
+<td style="text-align:left">本页文章</td>
+</tr>
+<tr>
+<td style="text-align:left">page.prev</td>
+<td style="text-align:left">上一页的页数。如果此页是第一页的话则为 0。</td>
+</tr>
+<tr>
+<td style="text-align:left">page.prev_link</td>
+<td style="text-align:left">上一页的网址。如果此页是第一页的话则为 ‘’。</td>
+</tr>
+<tr>
+<td style="text-align:left">page.next</td>
+<td style="text-align:left">下一页的页数。如果此页是最后一页的话则为 0。</td>
+</tr>
+<tr>
+<td style="text-align:left">page.next_link</td>
+<td style="text-align:left">下一页的网址。如果此页是最后一页的话则为 ‘’。</td>
+</tr>
+<tr>
+<td style="text-align:left">page.path</td>
+<td style="text-align:left">当前页面的路径（不含根目录）。我们通常在主题中使用 url_for(page.path)。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="归档-archive"><a href="#归档-archive" class="headerlink" title="归档 (archive)"></a>归档 (archive)</h2><p>与 index 布局相同，但新增以下变量。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">变量</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">page.archive</td>
+<td style="text-align:left">等于 true</td>
+</tr>
+<tr>
+<td style="text-align:left">page.year</td>
+<td style="text-align:left">年份归档 (4位)</td>
+</tr>
+<tr>
+<td style="text-align:left">page.month</td>
+<td style="text-align:left">月份归档 (没有前导零的2位数)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="分类-category"><a href="#分类-category" class="headerlink" title="分类 (category)"></a>分类 (category)</h2><p>与 index 布局相同，但新增以下变量。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">变量</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">page.category</td>
+<td style="text-align:left">分类名称</td>
+</tr>
+</tbody>
+</table>
+<h2 id="标签-tag"><a href="#标签-tag" class="headerlink" title="标签 (tag)"></a>标签 (tag)</h2><p>与 index 布局相同，但新增以下变量。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">变量</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">page.tag</td>
+<td style="text-align:left">标签名称</td>
+</tr>
+</tbody>
+</table>
+<h1 id="辅助函数"><a href="#辅助函数" class="headerlink" title="辅助函数"></a>辅助函数</h1><p>辅助函数帮助在模版中快速插入内容。辅助函数不能在源文件中使用。</p>
+<h2 id="网址-1"><a href="#网址-1" class="headerlink" title="网址"></a>网址</h2><h3 id="url-for"><a href="#url-for" class="headerlink" title="url_for"></a>url_for</h3><p>在路径前加上根路径，从 Hexo 2.7 开始您应该使用此函数而不是 config.root + path。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- url_for(path) %&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="relative-url"><a href="#relative-url" class="headerlink" title="relative_url"></a>relative_url</h3><p>取得与 from 相对的 to 路径。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- relative_url(<span class="keyword">from</span>, to) %&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="gravatar"><a href="#gravatar" class="headerlink" title="gravatar"></a>gravatar</h3><p>插入 Gravatar 图片。<br>如果不指定 options 参数，将会应用默认参数。否则，你可以将其设置为一个数字，这个数字将会作为 Gravatar 的大小参数。最后，如果你设置它一个对象，它将会被转换为 Gravatar 的一个查询字符串参数。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- gravatar(email, [options]) %&gt;;</div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;%- gravatar(<span class="string">'a@abc.com'</span>) %&gt;</div><div class="line"><span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787</span></div><div class="line">&lt;%- gravatar(<span class="string">'a@abc.com'</span>, <span class="number">40</span>) %&gt;</div><div class="line"><span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787?s=40</span></div><div class="line">&lt;%- gravatar(<span class="string">'a@abc.com'</span> &#123;<span class="attr">s</span>: <span class="number">40</span>, <span class="attr">d</span>: <span class="string">'http://example.com/image.png'</span>&#125;) %&gt;</div><div class="line"><span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787?s=40&amp;d=http%3A%2F%2Fexample.com%2Fimage.png</span></div></pre></td></tr></table></figure></p>
+<h2 id="HTML-标签"><a href="#HTML-标签" class="headerlink" title="HTML 标签"></a>HTML 标签</h2><h3 id="css"><a href="#css" class="headerlink" title="css"></a>css</h3><p>载入 CSS 文件。path 可以是数组或字符串，如果 path 开头不是 / 或任何协议，则会自动加上根路径；如果后面没有加上 .css 扩展名的话，也会自动加上。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- css(path, ...) %&gt;</div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;%- css(<span class="string">'style.css'</span>) %&gt;</div><div class="line"><span class="comment">// &lt;link rel="stylesheet" href="/style.css" type="text/css"&gt;</span></div><div class="line">&lt;%- css([<span class="string">'style.css'</span>, <span class="string">'screen.css'</span>]) %&gt;</div><div class="line"><span class="comment">// &lt;link rel="stylesheet" href="/style.css" type="text/css"&gt;</span></div><div class="line"><span class="comment">// &lt;link rel="stylesheet" href="/screen.css" type="text/css"&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="js"><a href="#js" class="headerlink" title="js"></a>js</h3><p>载入 JavaScript 文件。path 可以是数组或字符串，如果 path 开头不是 / 或任何协议，则会自动加上根路径；如果后面没有加上 .js 扩展名的话，也会自动加上。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- js(path, ...) %&gt;</div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;%- js(<span class="string">'script.js'</span>) %&gt;</div><div class="line"><span class="comment">// &lt;script type="text/javascript" src="/script.js"&gt;&lt;/script&gt;</span></div><div class="line">&lt;%- js([<span class="string">'script.js'</span>, <span class="string">'gallery.js'</span>]) %&gt;</div><div class="line"><span class="comment">// &lt;script type="text/javascript" src="/script.js"&gt;&lt;/script&gt;</span></div><div class="line"><span class="comment">// &lt;script type="text/javascript" src="/gallery.js"&gt;&lt;/script&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="link-to"><a href="#link-to" class="headerlink" title="link_to"></a>link_to</h3><p>插入链接。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- link_to(path, [text], [options]) %&gt;</div></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">external</td>
+<td style="text-align:left">在新视窗打开链接</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">class</td>
+<td style="text-align:left">Class 名称</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">id</td>
+<td style="text-align:left">ID</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>示例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;%- link_to(<span class="string">'http://www.google.com'</span>) %&gt;</div><div class="line"><span class="comment">// &lt;a href="http://www.google.com" title="http://www.google.com"&gt;http://www.google.com&lt;/a&gt;</span></div><div class="line">&lt;%- link_to(<span class="string">'http://www.google.com'</span>, <span class="string">'Google'</span>) %&gt;</div><div class="line"><span class="comment">// &lt;a href="http://www.google.com" title="Google"&gt;Google&lt;/a&gt;</span></div><div class="line">&lt;%- link_to(<span class="string">'http://www.google.com'</span>, <span class="string">'Google'</span>, &#123;<span class="attr">external</span>: <span class="literal">true</span>&#125;) %&gt;</div><div class="line"><span class="comment">// &lt;a href="http://www.google.com" title="Google" target="_blank" rel="external"&gt;Google&lt;/a&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="mail-to"><a href="#mail-to" class="headerlink" title="mail_to"></a>mail_to</h3><p>插入电子邮箱链接。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- mail_to(path, [text], [options]) %&gt;</div></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">class</td>
+<td style="text-align:left">Class 名称</td>
+</tr>
+<tr>
+<td style="text-align:left">id</td>
+<td style="text-align:left">ID</td>
+</tr>
+<tr>
+<td style="text-align:left">subject</td>
+<td style="text-align:left">邮件主题</td>
+</tr>
+<tr>
+<td style="text-align:left">cc</td>
+<td style="text-align:left">抄送（CC）</td>
+</tr>
+<tr>
+<td style="text-align:left">bcc</td>
+<td style="text-align:left">密送（BCC）</td>
+</tr>
+<tr>
+<td style="text-align:left">body</td>
+<td style="text-align:left">邮件内容</td>
+</tr>
+</tbody>
+</table>
+<p>示例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;%- mail_to(<span class="string">'a@abc.com'</span>) %&gt;</div><div class="line"><span class="comment">// &lt;a href="mailto:a@abc.com" title="a@abc.com"&gt;a@abc.com&lt;/a&gt;</span></div><div class="line">&lt;%- mail_to(<span class="string">'a@abc.com'</span>, <span class="string">'Email'</span>) %&gt;</div><div class="line"><span class="comment">// &lt;a href="mailto:a@abc.com" title="Email"&gt;Email&lt;/a&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="image-tag"><a href="#image-tag" class="headerlink" title="image_tag"></a>image_tag</h3><p>插入图片。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- image_tag(path, [options]) %&gt;</div></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">alt</td>
+<td style="text-align:left">图片的替代文字</td>
+</tr>
+<tr>
+<td style="text-align:left">class</td>
+<td style="text-align:left">Class 名称</td>
+</tr>
+<tr>
+<td style="text-align:left">id</td>
+<td style="text-align:left">ID</td>
+</tr>
+<tr>
+<td style="text-align:left">width</td>
+<td style="text-align:left">图片宽度</td>
+</tr>
+<tr>
+<td style="text-align:left">height</td>
+<td style="text-align:left">图片高度</td>
+</tr>
+</tbody>
+</table>
+<h3 id="favicon-tag"><a href="#favicon-tag" class="headerlink" title="favicon_tag"></a>favicon_tag</h3><p>插入 favicon。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- favicon_tag(path) %&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="feed-tag"><a href="#feed-tag" class="headerlink" title="feed_tag"></a>feed_tag</h3><p>插入 feed 链接。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- feed_tag(path, [options]) %&gt;</div></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">title</td>
+<td style="text-align:left">Feed 标题</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">type</td>
+<td style="text-align:left">Feed 类型</td>
+<td style="text-align:left">atom</td>
+</tr>
+</tbody>
+</table>
+<h2 id="条件函数"><a href="#条件函数" class="headerlink" title="条件函数"></a>条件函数</h2><h3 id="is-current"><a href="#is-current" class="headerlink" title="is_current"></a>is_current</h3><p>检查 path 是否符合目前页面的网址。开启 strict 选项启用严格比对。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- is_current(path, [strict]) %&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="is-home"><a href="#is-home" class="headerlink" title="is_home"></a>is_home</h3><p>检查目前是否为首页。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- is_home() %&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="is-post"><a href="#is-post" class="headerlink" title="is_post"></a>is_post</h3><p>检查目前是否为文章。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- is_post() %&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="is-archive"><a href="#is-archive" class="headerlink" title="is_archive"></a>is_archive</h3><p>检查目前是否为存档页面。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- is_archive() %&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="is-year"><a href="#is-year" class="headerlink" title="is_year"></a>is_year</h3><p>检查目前是否为年度归档页面。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- is_year() %&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="is-month"><a href="#is-month" class="headerlink" title="is_month"></a>is_month</h3><p>检查目前是否为月度归档页面。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- is_month() %&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="is-category"><a href="#is-category" class="headerlink" title="is_category"></a>is_category</h3><p>检查目前是否为分类归档页面。<br>如果给定一个字符串作为参数，将会检查目前是否为指定分类。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;%- is_category() %&gt;</div><div class="line">&lt;%- is_category('hobby') %&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="is-tag"><a href="#is-tag" class="headerlink" title="is_tag"></a>is_tag</h3><p>检查目前是否为标签归档页面。<br>如果给定一个字符串作为参数，将会检查目前是否为指定标签。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;%- is_tag() %&gt;</div><div class="line">&lt;%- is_tag('hobby') %&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="字符串处理"><a href="#字符串处理" class="headerlink" title="字符串处理"></a>字符串处理</h2><h3 id="trim"><a href="#trim" class="headerlink" title="trim"></a>trim</h3><p>清除字符串开头和结尾的空格。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- trim(string) %&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="strip-html"><a href="#strip-html" class="headerlink" title="strip_html"></a>strip_html</h3><p>清除字符串中的 HTML 标签。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- strip_html(string) %&gt;</div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;%- strip_html('It's not &lt;b&gt;important&lt;/b&gt; anymore!') %&gt;</div><div class="line">// It's not important anymore!</div></pre></td></tr></table></figure></p>
+<h3 id="titlecase"><a href="#titlecase" class="headerlink" title="titlecase"></a>titlecase</h3><p>把字符串转换为正确的 Title case。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- titlecase(string) %&gt;</div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;%- titlecase('this is an apple') %&gt;</div><div class="line"># This is an Apple</div></pre></td></tr></table></figure></p>
+<h3 id="markdown"><a href="#markdown" class="headerlink" title="markdown"></a>markdown</h3><p>使用 Markdown 解析字符串。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- markdown(str) %&gt;</div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;%- markdown(<span class="string">'make me **strong**'</span>) %&gt;</div><div class="line"><span class="comment">// make me &lt;strong&gt;strong&lt;/strong&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="render-1"><a href="#render-1" class="headerlink" title="render"></a>render</h3><p>解析字符串。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- render(str, engine, [options]) %&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="word-wrap"><a href="#word-wrap" class="headerlink" title="word_wrap"></a>word_wrap</h3><p>使每行的字符串长度不超过 length。length 预设为 80。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- word_wrap(str, [length]) %&gt;</div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;%- word_wrap(<span class="string">'Once upon a time'</span>, <span class="number">8</span>) %&gt;</div><div class="line"><span class="comment">// Once upon\n a time</span></div></pre></td></tr></table></figure></p>
+<h3 id="truncate"><a href="#truncate" class="headerlink" title="truncate"></a>truncate</h3><p>移除超过 length 长度的字符串。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- truncate(text, length) %&gt;</div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;%- truncate(<span class="string">'Once upon a time in a world far far away'</span>, &#123;<span class="attr">length</span>: <span class="number">17</span>&#125;) %&gt;</div><div class="line"><span class="comment">// Once upon a ti...</span></div><div class="line">&lt;%- truncate(<span class="string">'Once upon a time in a world far far away'</span>, &#123;<span class="attr">length</span>: <span class="number">17</span>, <span class="attr">separator</span>: <span class="string">' '</span>&#125;) %&gt;</div><div class="line"><span class="comment">// Once upon a...</span></div><div class="line">&lt;%- truncate(<span class="string">'And they found that many people were sleeping better.'</span>, &#123;<span class="attr">length</span>: <span class="number">25</span>, <span class="attr">omission</span>: <span class="string">'... (continued)'</span>&#125;) %&gt;</div><div class="line"><span class="comment">// And they f... (continued)</span></div></pre></td></tr></table></figure></p>
+<h2 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h2><h3 id="partial"><a href="#partial" class="headerlink" title="partial"></a>partial</h3><p>载入其他模板文件，可在 locals 设定区域变量。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- partial(layout, [locals], [options]) %&gt;</div></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">cache</td>
+<td style="text-align:left">缓存（使用 Fragment cache）</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">only</td>
+<td style="text-align:left">限制局部变量。在模板中只能使用 locals 中设定的变量。</td>
+<td style="text-align:left">false</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fragment-cache"><a href="#fragment-cache" class="headerlink" title="fragment_cache"></a>fragment_cache</h3><p>局部缓存。它储存局部内容，下次使用时就能直接使用缓存。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- fragment_cache(id, fn);</div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;%- fragment_cache(<span class="string">'header'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;header&gt;&lt;/header&gt;'</span>;</div><div class="line">&#125;) %&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="日期与时间"><a href="#日期与时间" class="headerlink" title="日期与时间"></a>日期与时间</h2><h3 id="date"><a href="#date" class="headerlink" title="date"></a>date</h3><p>插入格式化的日期。date 可以是 UNIX 时间、ISO 字符串、Date 对象或 Moment.js 对象。format 默认为 date_format 配置信息。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- date(date, [format]) %&gt;</div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;%- date(<span class="built_in">Date</span>.now()) %&gt;</div><div class="line"><span class="comment">// 2013-01-01</span></div><div class="line">&lt;%- date(<span class="built_in">Date</span>.now(), <span class="string">'YYYY/M/D'</span>) %&gt;</div><div class="line"><span class="comment">// Jan 1 2013</span></div></pre></td></tr></table></figure></p>
+<h3 id="date-xml"><a href="#date-xml" class="headerlink" title="date_xml"></a>date_xml</h3><p>插入 XML 格式的日期。date 可以是 UNIX 时间、ISO 字符串、Date 对象或 Moment.js 对象。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- date_xml(date) %&gt;</div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;%- date_xml(<span class="built_in">Date</span>.now()) %&gt;</div><div class="line"><span class="comment">// 2013-01-01T00:00:00.000Z</span></div></pre></td></tr></table></figure></p>
+<h3 id="time"><a href="#time" class="headerlink" title="time"></a>time</h3><p>插入格式化的时间。date 可以是 UNIX 时间、ISO 字符串、Date 对象或 Moment.js 对象。format 默认为 time_format 配置信息。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- time(date, [format]) %&gt;</div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;%- time(<span class="built_in">Date</span>.now()) %&gt;</div><div class="line"><span class="comment">// 13:05:12</span></div><div class="line">&lt;%- time(<span class="built_in">Date</span>.now(), <span class="string">'h:mm:ss a'</span>) %&gt;</div><div class="line"><span class="comment">// 1:05:12 pm</span></div></pre></td></tr></table></figure></p>
+<h3 id="full-date"><a href="#full-date" class="headerlink" title="full_date"></a>full_date</h3><p>插入格式化的日期和时间。date 可以是 UNIX 时间、ISO 字符串、Date 对象或 Moment.js 对象。format 默认为 date_format + time_format。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- full_date(date, [format]) %&gt;</div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;%- full_date(<span class="keyword">new</span> <span class="built_in">Date</span>()) %&gt;</div><div class="line"><span class="comment">// Jan 1, 2013 0:00:00</span></div><div class="line">&lt;%- full_date(<span class="keyword">new</span> <span class="built_in">Date</span>(), <span class="string">'dddd, MMMM Do YYYY, h:mm:ss a'</span>) %&gt;</div><div class="line"><span class="comment">// Tuesday, January 1st 2013, 12:00:00 am</span></div></pre></td></tr></table></figure></p>
+<h3 id="moment"><a href="#moment" class="headerlink" title="moment"></a>moment</h3><p><a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> 函数库。</p>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="list-categories"><a href="#list-categories" class="headerlink" title="list_categories"></a>list_categories</h3><p>插入分类列表。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- list_categories([options]) %&gt;</div></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">orderby</td>
+<td style="text-align:left">分类排列方式</td>
+<td style="text-align:left">name</td>
+</tr>
+<tr>
+<td style="text-align:left">order</td>
+<td style="text-align:left">分类排列顺序。1, asc 升序；-1, desc 降序。</td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">show_count</td>
+<td style="text-align:left">显示每个分类的文章总数</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left">style</td>
+<td style="text-align:left">分类列表的显示方式。使用 list 以无序列表（unordered list）方式显示。</td>
+<td style="text-align:left">list</td>
+</tr>
+<tr>
+<td style="text-align:left">separator</td>
+<td style="text-align:left">分类间的分隔符号。只有在 style 不是 list 时有用。</td>
+<td style="text-align:left">,</td>
+</tr>
+<tr>
+<td style="text-align:left">depth</td>
+<td style="text-align:left">要显示的分类层级。0 显示所有层级的分类；-1 和 0 很类似，但是显示不分层级；1 只显示第一层的分类。</td>
+<td style="text-align:left">0</td>
+</tr>
+<tr>
+<td style="text-align:left">class</td>
+<td style="text-align:left">分类列表的 class 名称。</td>
+<td style="text-align:left">category</td>
+</tr>
+<tr>
+<td style="text-align:left">transform</td>
+<td style="text-align:left">改变分类名称显示方法的函数</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="list-tags"><a href="#list-tags" class="headerlink" title="list_tags"></a>list_tags</h3><p>插入标签列表。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- list_tags([options]) %&gt;</div></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">选项</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">预设值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">orderby</td>
+<td style="text-align:left">标签排列方式</td>
+<td style="text-align:left">name</td>
+</tr>
+<tr>
+<td style="text-align:left">order</td>
+<td style="text-align:left">标签排列顺序。1, asc 升序；-1, desc 降序。</td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">show_count</td>
+<td style="text-align:left">显示每个标签的文章总数</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left">style</td>
+<td style="text-align:left">标签列表的显示方式。使用 list 以无序列表（unordered list）方式显示。</td>
+<td style="text-align:left">list</td>
+</tr>
+<tr>
+<td style="text-align:left">separator</td>
+<td style="text-align:left">标签间的分隔符号。只有在 style 不是 list 时有用。</td>
+<td style="text-align:left">,</td>
+</tr>
+<tr>
+<td style="text-align:left">class</td>
+<td style="text-align:left">标签列表的 class 名称。</td>
+<td style="text-align:left">tag</td>
+</tr>
+<tr>
+<td style="text-align:left">transform</td>
+<td style="text-align:left">改变标签名称显示方法的函数</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">amount</td>
+<td style="text-align:left">要显示的标签数量（0 = 无限制）</td>
+<td style="text-align:left">0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="list-archives"><a href="#list-archives" class="headerlink" title="list_archives"></a>list_archives</h3><p>插入归档列表。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- list_archives([options]) %&gt;</div></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">type</td>
+<td style="text-align:left">类型。此设定可为 yearly 或 monthly。</td>
+<td style="text-align:left">monthly</td>
+</tr>
+<tr>
+<td style="text-align:left">order</td>
+<td style="text-align:left">排列顺序。1, asc 升序；-1, desc 降序。</td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">show_count</td>
+<td style="text-align:left">显示每个归档的文章总数</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left">format</td>
+<td style="text-align:left">日期格式</td>
+<td style="text-align:left">MMMM YYYY</td>
+</tr>
+<tr>
+<td style="text-align:left">style</td>
+<td style="text-align:left">归档列表的显示方式。使用 list 以无序列表（unordered list）方式显示。</td>
+<td style="text-align:left">list</td>
+</tr>
+<tr>
+<td style="text-align:left">separator</td>
+<td style="text-align:left">归档间的分隔符号。只有在 style 不是 list 时有用。</td>
+<td style="text-align:left">,</td>
+</tr>
+<tr>
+<td style="text-align:left">class</td>
+<td style="text-align:left">归档列表的 class 名称。</td>
+<td style="text-align:left">archive</td>
+</tr>
+<tr>
+<td style="text-align:left">transform</td>
+<td style="text-align:left">改变归档名称显示方法的函数</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="list-posts"><a href="#list-posts" class="headerlink" title="list_posts"></a>list_posts</h3><p>插入文章列表。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- list_posts([options]) %&gt;</div></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">orderby</td>
+<td style="text-align:left">文章排列方式</td>
+<td style="text-align:left">date</td>
+</tr>
+<tr>
+<td style="text-align:left">order</td>
+<td style="text-align:left">文章排列顺序。1, asc 升序；-1, desc 降序。</td>
+<td style="text-align:left">-1</td>
+</tr>
+<tr>
+<td style="text-align:left">style</td>
+<td style="text-align:left">文章列表的显示方式。使用 list 以无序列表（unordered list）方式显示。</td>
+<td style="text-align:left">list</td>
+</tr>
+<tr>
+<td style="text-align:left">separator</td>
+<td style="text-align:left">文章间的分隔符号。只有在 style 不是 list 时有用。</td>
+<td style="text-align:left">,</td>
+</tr>
+<tr>
+<td style="text-align:left">class</td>
+<td style="text-align:left">文章列表的 class 名称。</td>
+<td style="text-align:left">post</td>
+</tr>
+<tr>
+<td style="text-align:left">amount</td>
+<td style="text-align:left">要显示的文章数量（0 = 无限制）</td>
+<td style="text-align:left">6</td>
+</tr>
+<tr>
+<td style="text-align:left">transform</td>
+<td style="text-align:left">改变文章名称显示方法的函数</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tagcloud"><a href="#tagcloud" class="headerlink" title="tagcloud"></a>tagcloud</h3><p>插入标签云。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- tagcloud([tags], [options]) %&gt;</div></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">min_font</td>
+<td style="text-align:left">最小字体尺寸</td>
+<td style="text-align:left">10</td>
+</tr>
+<tr>
+<td style="text-align:left">max_font</td>
+<td style="text-align:left">最大字体尺寸</td>
+<td style="text-align:left">20</td>
+</tr>
+<tr>
+<td style="text-align:left">unit</td>
+<td style="text-align:left">字体尺寸的单位</td>
+<td style="text-align:left">px</td>
+</tr>
+<tr>
+<td style="text-align:left">amount</td>
+<td style="text-align:left">标签总量</td>
+<td style="text-align:left">40</td>
+</tr>
+<tr>
+<td style="text-align:left">orderby</td>
+<td style="text-align:left">标签排列方式</td>
+<td style="text-align:left">name</td>
+</tr>
+<tr>
+<td style="text-align:left">order</td>
+<td style="text-align:left">标签排列顺序。1, sac 升序；-1, desc 降序</td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">color</td>
+<td style="text-align:left">使用颜色</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">start_color</td>
+<td style="text-align:left">开始的颜色。您可使用十六进位值（#b700ff），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">end_color</td>
+<td style="text-align:left">结束的颜色。您可使用十六进位值（#b700ff），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="paginator"><a href="#paginator" class="headerlink" title="paginator"></a>paginator</h3><p>插入分页链接。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- paginator(options) %&gt;</div></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">base</td>
+<td style="text-align:left">基础网址</td>
+<td style="text-align:left">/</td>
+</tr>
+<tr>
+<td style="text-align:left">format</td>
+<td style="text-align:left">网址格式</td>
+<td style="text-align:left">page/%d/</td>
+</tr>
+<tr>
+<td style="text-align:left">total</td>
+<td style="text-align:left">分页总数</td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">current</td>
+<td style="text-align:left">目前页数</td>
+<td style="text-align:left">0</td>
+</tr>
+<tr>
+<td style="text-align:left">prev_text</td>
+<td style="text-align:left">上一页链接的文字。仅在 prev_next 设定开启时才有用。</td>
+<td style="text-align:left">Prev</td>
+</tr>
+<tr>
+<td style="text-align:left">next_text</td>
+<td style="text-align:left">下一页链接的文字。仅在 prev_next 设定开启时才有用。</td>
+<td style="text-align:left">Next</td>
+</tr>
+<tr>
+<td style="text-align:left">space</td>
+<td style="text-align:left">空白文字</td>
+<td style="text-align:left">…</td>
+</tr>
+<tr>
+<td style="text-align:left">prev_next</td>
+<td style="text-align:left">显示上一页和下一页的链接</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left">end_size</td>
+<td style="text-align:left">显示于两侧的页数</td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">mid_size</td>
+<td style="text-align:left">显示于中间的页数</td>
+<td style="text-align:left">2</td>
+</tr>
+<tr>
+<td style="text-align:left">show_all</td>
+<td style="text-align:left">显示所有页数。如果开启此参数的话，end_size 和 mid_size 就没用了。</td>
+<td style="text-align:left">false</td>
+</tr>
+</tbody>
+</table>
+<h3 id="search-form"><a href="#search-form" class="headerlink" title="search_form"></a>search_form</h3><p>插入 Google 搜索框。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- search_form(options) %&gt;</div></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">class</td>
+<td style="text-align:left">表单的 class name</td>
+<td style="text-align:left">search-form</td>
+</tr>
+<tr>
+<td style="text-align:left">text</td>
+<td style="text-align:left">搜索提示文字</td>
+<td style="text-align:left">Search</td>
+</tr>
+<tr>
+<td style="text-align:left">button</td>
+<td style="text-align:left">显示搜索按钮。此参数可为布尔值（boolean）或字符串，当设定是字符串的时候，即为搜索按钮的文字。</td>
+<td style="text-align:left">false</td>
+</tr>
+</tbody>
+</table>
+<h3 id="number-format"><a href="#number-format" class="headerlink" title="number_format"></a>number_format</h3><p>格式化数字。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- number_format(number, [options]) %&gt;</div></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">precision</td>
+<td style="text-align:left">数字精度。此选项可为 false 或非负整数。</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">delimiter</td>
+<td style="text-align:left">千位数分隔符号</td>
+<td style="text-align:left">,</td>
+</tr>
+<tr>
+<td style="text-align:left">separator</td>
+<td style="text-align:left">整数和小数之间的分隔符号</td>
+<td style="text-align:left">.</td>
+</tr>
+</tbody>
+</table>
+<p>示例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;<span class="attr">precision</span>: <span class="number">1</span>&#125;) %&gt;</div><div class="line"><span class="comment">// 12,345.68</span></div><div class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;<span class="attr">precision</span>: <span class="number">4</span>&#125;) %&gt;</div><div class="line"><span class="comment">// 12,345.6700</span></div><div class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;<span class="attr">precision</span>: <span class="number">0</span>&#125;) %&gt;</div><div class="line"><span class="comment">// 12,345</span></div><div class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;<span class="attr">delimiter</span>: <span class="string">''</span>&#125;) %&gt;</div><div class="line"><span class="comment">// 12345.67</span></div><div class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;<span class="attr">separator</span>: <span class="string">'/'</span>&#125;) %&gt;</div><div class="line"><span class="comment">// 12,345/67</span></div></pre></td></tr></table></figure></p>
+<h3 id="open-graph"><a href="#open-graph" class="headerlink" title="open_graph"></a>open_graph</h3><p>插入 open graph 资源。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- open_graph([options]) %&gt;</div></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">title</td>
+<td style="text-align:left">页面标题 (og:title)</td>
+<td style="text-align:left">page.title</td>
+</tr>
+<tr>
+<td style="text-align:left">type</td>
+<td style="text-align:left">页面类型 (og:type)</td>
+<td style="text-align:left">blog</td>
+</tr>
+<tr>
+<td style="text-align:left">url</td>
+<td style="text-align:left">页面网址 (og:url)</td>
+<td style="text-align:left">url</td>
+</tr>
+<tr>
+<td style="text-align:left">image</td>
+<td style="text-align:left">页面图片 (og:image)</td>
+<td style="text-align:left">内容中的图片</td>
+</tr>
+<tr>
+<td style="text-align:left">site_name</td>
+<td style="text-align:left">网站名称 (og:site_name)</td>
+<td style="text-align:left">config.title</td>
+</tr>
+<tr>
+<td style="text-align:left">description</td>
+<td style="text-align:left">页面描述 (og:desription)</td>
+<td style="text-align:left">内容摘要或前 200 字</td>
+</tr>
+<tr>
+<td style="text-align:left">twitter_card</td>
+<td style="text-align:left">Twitter 卡片类型 (twitter:card)</td>
+<td style="text-align:left">summary</td>
+</tr>
+<tr>
+<td style="text-align:left">twitter_id</td>
+<td style="text-align:left">Twitter ID (twitter:creator)</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">twitter_site</td>
+<td style="text-align:left">Twitter 网站 (twitter:site)</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">google_plus</td>
+<td style="text-align:left">Google+ 个人资料链接</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">fb_admins</td>
+<td style="text-align:left">Facebook 管理者 ID</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">fb_app_id</td>
+<td style="text-align:left">Facebook 应用程序 ID</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="toc"><a href="#toc" class="headerlink" title="toc"></a>toc</h3><p>解析内容中的标题标签 (h1~h6) 并插入目录。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- toc(str, [options]) %&gt;</div></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">class</td>
+<td style="text-align:left">Class 名称</td>
+<td style="text-align:left">toc</td>
+</tr>
+<tr>
+<td style="text-align:left">list_number</td>
+<td style="text-align:left">显示编号</td>
+<td style="text-align:left">true</td>
+</tr>
+</tbody>
+</table>
+<p>示例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;%- toc(page.content) %&gt;</div></pre></td></tr></table></figure></p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">Hexo官方文档</a></li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/02/28/使用Hexo在GitHub上建立个人博客站点/" rel="next" title="使用Hexo在GitHub上建立个人博客站点">
+                <i class="fa fa-chevron-left"></i> 使用Hexo在GitHub上建立个人博客站点
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="daemon" />
+          <p class="site-author-name" itemprop="name">daemon</p>
+          <p class="site-description motion-element" itemprop="description">不喜欢户外的摄影师不是一个好码农</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#常用配置"><span class="nav-text">常用配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#网站"><span class="nav-text">网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网址"><span class="nav-text">网址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目录"><span class="nav-text">目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章"><span class="nav-text">文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分类-amp-标签"><span class="nav-text">分类 & 标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#日期-时间格式"><span class="nav-text">日期 / 时间格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分页"><span class="nav-text">分页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#扩展"><span class="nav-text">扩展</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指令"><span class="nav-text">指令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#init"><span class="nav-text">init</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#new"><span class="nav-text">new</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#generate"><span class="nav-text">generate</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#publish"><span class="nav-text">publish</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#server"><span class="nav-text">server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#deploy"><span class="nav-text">deploy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#render"><span class="nav-text">render</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#migrate"><span class="nav-text">migrate</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#clean"><span class="nav-text">clean</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#写作"><span class="nav-text">写作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#布局（Layout）"><span class="nav-text">布局（Layout）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件名称"><span class="nav-text">文件名称</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#草稿"><span class="nav-text">草稿</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模版（Scaffold）"><span class="nav-text">模版（Scaffold）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Front-Matter"><span class="nav-text">Front-Matter</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#标签插件"><span class="nav-text">标签插件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#引用块"><span class="nav-text">引用块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#普通的-blockquote"><span class="nav-text">普通的 blockquote</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用书上的句子"><span class="nav-text">引用书上的句子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用Twitter"><span class="nav-text">引用Twitter</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用网络上的文章"><span class="nav-text">引用网络上的文章</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码块"><span class="nav-text">代码块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#普通代码块"><span class="nav-text">普通代码块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#指定语言"><span class="nav-text">指定语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#附加说明"><span class="nav-text">附加说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#附加网址和说明"><span class="nav-text">附加网址和说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#反引号代码块"><span class="nav-text">反引号代码块</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jsFiddle"><span class="nav-text">jsFiddle</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gist"><span class="nav-text">Gist</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iframe"><span class="nav-text">iframe</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Image"><span class="nav-text">Image</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Link"><span class="nav-text">Link</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Include-Code"><span class="nav-text">Include Code</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Youtube"><span class="nav-text">Youtube</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vimeo"><span class="nav-text">Vimeo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引用文章"><span class="nav-text">引用文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引用资源"><span class="nav-text">引用资源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Raw"><span class="nav-text">Raw</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#变量"><span class="nav-text">变量</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#全局变量"><span class="nav-text">全局变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网站变量"><span class="nav-text">网站变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#页面-page"><span class="nav-text">页面(page)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章-post"><span class="nav-text">文章 (post)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#首页（index）"><span class="nav-text">首页（index）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#归档-archive"><span class="nav-text">归档 (archive)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分类-category"><span class="nav-text">分类 (category)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标签-tag"><span class="nav-text">标签 (tag)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#辅助函数"><span class="nav-text">辅助函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#网址-1"><span class="nav-text">网址</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#url-for"><span class="nav-text">url_for</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#relative-url"><span class="nav-text">relative_url</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gravatar"><span class="nav-text">gravatar</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML-标签"><span class="nav-text">HTML 标签</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#css"><span class="nav-text">css</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#js"><span class="nav-text">js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#link-to"><span class="nav-text">link_to</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mail-to"><span class="nav-text">mail_to</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#image-tag"><span class="nav-text">image_tag</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#favicon-tag"><span class="nav-text">favicon_tag</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#feed-tag"><span class="nav-text">feed_tag</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#条件函数"><span class="nav-text">条件函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#is-current"><span class="nav-text">is_current</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#is-home"><span class="nav-text">is_home</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#is-post"><span class="nav-text">is_post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#is-archive"><span class="nav-text">is_archive</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#is-year"><span class="nav-text">is_year</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#is-month"><span class="nav-text">is_month</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#is-category"><span class="nav-text">is_category</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#is-tag"><span class="nav-text">is_tag</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串处理"><span class="nav-text">字符串处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#trim"><span class="nav-text">trim</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#strip-html"><span class="nav-text">strip_html</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#titlecase"><span class="nav-text">titlecase</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#markdown"><span class="nav-text">markdown</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#render-1"><span class="nav-text">render</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#word-wrap"><span class="nav-text">word_wrap</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#truncate"><span class="nav-text">truncate</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模板"><span class="nav-text">模板</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#partial"><span class="nav-text">partial</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fragment-cache"><span class="nav-text">fragment_cache</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#日期与时间"><span class="nav-text">日期与时间</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#date"><span class="nav-text">date</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#date-xml"><span class="nav-text">date_xml</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#time"><span class="nav-text">time</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#full-date"><span class="nav-text">full_date</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#moment"><span class="nav-text">moment</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表"><span class="nav-text">列表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#list-categories"><span class="nav-text">list_categories</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#list-tags"><span class="nav-text">list_tags</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#list-archives"><span class="nav-text">list_archives</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#list-posts"><span class="nav-text">list_posts</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tagcloud"><span class="nav-text">tagcloud</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#paginator"><span class="nav-text">paginator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#search-form"><span class="nav-text">search_form</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#number-format"><span class="nav-text">number_format</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#open-graph"><span class="nav-text">open_graph</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#toc"><span class="nav-text">toc</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-text">参考</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">daemon</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
